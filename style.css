@@ -1,17 +1,18 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: "Poppins", sans-serif;
 }
 .main{
     background-image: url(assets/img/backgroundImg.jpg);
-    height: 97vh;
+    height: 98vh;
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     position: relative;
 }
 .main .box{
-    height: 97vh;
+    height: 98vh;
     width: 100%;
     opacity: 0.5;
     background-color: black;
@@ -27,4 +28,64 @@ nav{
     height: 100px;
     position: relative;
     z-index: 1;
+}
+body{
+    background-color: black;
+}
+.body{
+    height: 75%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 25px;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.subHeading{
+    font-weight: 100;
+    font-size: 20px;
+} 
+.division{
+    height: 8px;
+    background-color: #313131;
+}
+.btn{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    text-align: center;
+}
+.getStartedBtn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 5px;
+}
+.signInBtn{
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+}
+#email{
+    min-height: 2rem;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border-color: #313131;
+    border-radius: 4px;
+    padding: 3px 50px;
+    font-size: 12px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 7px;
 }
