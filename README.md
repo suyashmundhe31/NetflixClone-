@@ -1,2 +1,2 @@
-# NetflixClone - HTML | CSS
+# NetflixClone-
 Author - <b>Suyash Mundhe</b>
