@@ -7,7 +7,7 @@
     background-image: url(assets/img/backgroundImg.jpg);
     height: 98vh;
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: max(1200px, 125vw);
     background-repeat: no-repeat;
     position: relative;
 }
@@ -22,10 +22,18 @@
 nav{
     display: flex;
     align-items: center;
-    max-width: 150vh;
+    max-width: 60vw;
     margin: auto;
     justify-content: space-between;
     height: 100px;
+    position: relative;
+    z-index: 1;
+}
+nav img{
+    position: relative;
+    z-index: 1;
+}
+nav button{
     position: relative;
     z-index: 1;
 }
@@ -45,7 +53,7 @@ body{
     font-size: 25px;
     gap: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 .subHeading{
     font-weight: 100;
@@ -100,51 +108,56 @@ body{
 }
 .device1 , .device2 , .device3 , .device4 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     max-width: 70vw;
     margin: auto;
     align-items: center;
     min-height: 35vw;
 }
+.device1Img , .device3Img{
+    position: relative;
+}
 .device1Heading , .device2Heading , .device3Heading , .device4Heading , .faqHeading{
     color: white;
     font-weight: 700;
     font-style:normal;
     font-size: 45px;
+    padding: 34px 0;
 }
 .device1Subheading , .device2Subheading , .device3Subheading , .device4Subheading{
     color:white;
     font-weight: 100;
     font-size: 20px;
+    padding-bottom: 30px;
 }
 .device1Img img{
-    width: 30vw;
+    width: 440px;
     z-index: 10;
     position: relative;
 }
 .device1 , .device3{
     position: relative;
+    top: 0;
 }
 .device1 video{
     position: absolute;
-    right: 0%;
-    width: 382px;
-    top: 150px;
+    right: 13%;
+    width: 320px;
+    top: 70px;
 }
 .device2 img , .device4 img{
     width: 500px;
 }
 .device3Img img{
-    width: 40vw;
+    width: 590px;
     position: relative;
     z-index: 10;
 }
 .device3Img video{
     position:absolute;
-    right: 10%;
-    width: 385px;
-    top: 90px;
+    right: 19%;
+    width: 370px;
+    top: 60px;
 }
 .faqHeading{
     text-align: center;
@@ -195,5 +208,62 @@ footer{
     padding: 8px;
 }
 .footerDropdown , .lastText{
-    padding: 15px;
+    padding: 20px;
+}
+.membershipBtns{
+    padding-bottom: 15px;
+}
+@media screen and (max-width:1300px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .device1 , .device2 , .device3 , .device4{
+        flex-wrap: wrap;
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .body{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .device1Heading , .device2Heading , .device3Heading , .device4Heading , .faqHeading{
+        font-weight: 600;
+        font-size: 30px;
+        padding: 34px 0;
+        text-align: center;
+    }
+    .device1Subheading , .device2Subheading , .device3Subheading , .device4Subheading{
+        font-weight: 100;
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .device3Img img{
+        width: 350px;
+    }
+    .device3Img video{
+        width: 220px;
+        top: 40px;
+    } 
+    #email{
+        font-size: 12px;
+        min-height: 1rem;
+        font-weight: 300;
+        padding: 5px 50px 5px 5px;
+    }
+    .getStartedBtn{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .device1Img img{
+        width: 350px;
+    }
+    .device1 video{
+        width: 250px;
+        top: 50px;
+    }
+    .device2 img , .device4 img{
+        width: 300px;
+    }
 }
