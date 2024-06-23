@@ -13,8 +13,11 @@
             <span>
                 <img src="assets/img/netflixlogo.svg" alt="netflixlogo" width="170px">
             </span>
-            <div>
-                <button class="dropDown">English</button>
+            <div class="mainBtns">
+                <select class="dropDown" name="LanguageSelect">
+                    <option  value="en-IN" selected="">English</option>
+                    <option value="hi-IN">हिन्दी</option>
+                </select>
                 <button class="btn signInBtn">Sign In</button>
             </div>
         </nav>
@@ -118,7 +121,7 @@
         </div>
         <div class="membership">
             <span class="subHeading">Ready to watch? Enter your email to create or restart your membership.</span> <br><br>
-            <div class="btns">
+            <div class="btns membershipBtns">
                 <input type="email" name="email" id="email" placeholder="Email address">
                 <button class="btn getStartedBtn">Get Started ></button>
             </div>
@@ -153,7 +156,10 @@
             </div>
         </div>
         <div class="footerDropdown">
-            <button class="dropDown">English</button>
+            <select class="dropDown" name="LanguageSelect">
+                <option  value="en-IN" selected="">English</option>
+                <option value="hi-IN">हिन्दी</option>
+            </select>
         </div>
         <span class="lastText">Netflix India</span>
     </footer>
